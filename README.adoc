@@ -1,0 +1,28 @@
+== BUILD TOOLS EVOLUTION
+
+=== Ant project
+
+Go inside `ant-sample` and execute:
+
+[source,bash]
+----
+ant jar
+----
+
+=== Maven Project
+
+Go inside `maven-sample` and execute:
+
+[source,bash]
+----
+./mvnw test
+----
+
+=== Gradle Project
+
+Go inside `gradle-sample` and execute:
+
+[source,bash]
+----
+./gradlew test
+----
