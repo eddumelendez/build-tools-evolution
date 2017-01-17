@@ -1,10 +1,14 @@
-<project name="java-sample" default="jar" basedir=".">
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="java-sample" default="jar" basedir=".">
 
     <target name="clean" depends="init">
         <delete dir="${build.dir}"/>
     </target>
 
-    <target name="init">
+    <target name="deps">
+        <ivy:retrieve />
+    </target>
+
+    <target name="init" depends="deps">
         <property name="project.name" value="helloWorld"/>
         <property name="src.dir" value="src"/>
         <property name="test.dir" value="test"/>

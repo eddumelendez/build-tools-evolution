@@ -1,0 +1,6 @@
+<ivy-module version="2.0">
+	<info organisation="io.eddumelendez.ant" module="ant-sample"/>
+	<dependencies>
+		<dependency org="junit" name="junit" rev="4.12"/>
+	</dependencies>
+</ivy-module>
